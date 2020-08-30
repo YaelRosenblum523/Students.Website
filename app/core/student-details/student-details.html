@@ -1,0 +1,41 @@
+<div ng-if="$ctrl.student.fname" class="student-details-card-outer" ng-class="{'alert':$ctrl.student.grade<=45}">
+    <div class="student-details-card">
+        <div class="student-details-inner">
+            <img src="assets/images/user.png" class="user-image">
+        </div>
+        <div class="student-details-inner">
+            <div class="student-details-value"> NAME: <span>{{$ctrl.student.fname}}</span></div>
+            <div class="student-details-value">S NAME: <span>{{$ctrl.student.lname}}</span></div>
+        </div>
+        <div class="student-details-inner">
+            <div class="student-details-value">CLASS: <span>{{$ctrl.classType.value}}</span></div>
+            <div class="student-details-value">YEAR: <span>{{$ctrl.student.year}}</span></div>
+        </div>
+        <div class="student-details-inner">
+            <div class="student-details-value">SCORE:</div>
+            <input ng-model="$ctrl.student.grade" class="student-details-grade" ng-model-options="{ debounce: 1000 }"
+                ng-change="$ctrl.updateGrade({eventData:$ctrl.student})"></input>
+        </div>
+    </div>
+</div>
+<!-- <md-card ng-if="$ctrl.student.fname" ng-class="{'alert':$ctrl.student.grade<=45}">
+
+    <md-card-content class="student-details-card">
+        <div class="student-details-inner">
+            <img src="assets/images/user.png" class="user-image">
+        </div>
+        <div class="student-details-inner">
+            <div class="student-details-value"> NAME: <span>{{$ctrl.student.fname}}</span></div>
+            <div class="student-details-value">S NAME: <span>{{$ctrl.student.lname}}</span></div>
+        </div>
+        <div class="student-details-inner">
+            <div class="student-details-value">CLASS: <span>{{$ctrl.classType.value}}</span></div>
+            <div class="student-details-value">YEAR: <span>{{$ctrl.student.year}}</span></div>
+        </div>
+        <div class="student-details-inner">
+            <div class="student-details-value">SCORE:</div>
+            <input ng-model="$ctrl.student.grade" ng-model-options="{ debounce: 1000 }"
+                ng-change="$ctrl.updateGrade({eventData:$ctrl.student})"></input>
+        </div>
+    </md-card-content>
+</md-card> -->

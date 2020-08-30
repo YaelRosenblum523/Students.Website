@@ -1,0 +1,33 @@
+<div class="upper">
+    <h1>Student Management</h1>
+    <div class="style-button-wrapper">
+        <i class="fas fa-bars" ng-click="onViewSelected('list')"></i>
+        <i class="fas fa-th" ng-click="onViewSelected('grid')"></i>
+    </div>
+    <div class="wrapper">
+        <combo class="inner" place-holder="Choose Year" selected="selectedYear" items="years" change="onYearChanged()">
+        </combo>
+        <combo class="inner" place-holder="Choose Class" selected="selectedClass" items="classes"
+            change="onClassChanged()">
+        </combo>
+        <student-grid students="students" selected-student="selectedStudent" update-grade="onGradeUpdated(eventData)"
+            select-student="onStudentSelected(eventData)" register-parent="register(childRef)"
+            ng-show="selectedView=='grid'">
+        </student-grid>
+        <student-list class="list" ng-if="selectedView=='list'" students="students" selected-student="selectedStudent"
+            update-grade="onGradeUpdated(eventData)" select-student="onStudentSelected(eventData)"
+            register-parent="register(childRef)" class-type="selectedClass">
+        </student-list>
+    </div>
+</div>
+<div class="lower">
+    <div class="student-details-card-wrapper" ng-if="selectedView=='grid'">
+        <student-details student="selectedStudent" class-type="selectedClass"
+            update-grade="onGradeUpdatedDetails(eventData)">
+        </student-details>
+    </div>
+    <text-angular ng-model="htmlVariable" ta-readonly="disabled" ta-disabled='disabled'></text-angular>
+    <div class="submit-wrapper">
+        <md-button class="md-raised md-primary">Submit</md-button>
+
+</div>

@@ -1,0 +1,6 @@
+<div class="selectWrapper">
+    <select class="styled-select" ng-model="$ctrl.selected.value" ng-change="onChange()">
+        <option value="0">{{$ctrl.placeHolder}}</option>
+        <option ng-repeat="item in $ctrl.items" value="{{item}}">{{item}}</option>
+    </select>
+</div>

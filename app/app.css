@@ -1,0 +1,235 @@
+/* app css stylesheet */
+
+body {
+  /* background-color:#e6e5e5; */
+  background-color: white;
+}
+
+.main {
+  flex: 0 1 50%;
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.upper {
+  flex: 0 0 100%;
+  max-height: 45%;
+  min-height: 45%;
+  max-width: 97.5%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-bottom: 1rem;
+  background-color: #e6e5e5;
+  padding: 2rem;
+  padding-top: 0;
+  padding-left: 0;
+}
+
+h1 {
+  background-color: #ccc5c5;
+  font-weight: bold;
+  width: 100%;
+  padding-left: 2rem;
+  margin-block-start: 0;
+  margin-block-end: 0.4rem;
+}
+
+.wrapper {
+  display: flex;
+  margin: 2rem;
+  margin-top: 0.4rem;
+}
+
+.lower {
+  padding-top: 1rem;
+  flex: 0 0 100%;
+  max-height: 45%;
+  min-height: 45%;
+  max-width: 96.2%;
+  overflow-y: hidden;
+  background-color: #e6e5e5;
+  overflow-x: hidden;
+  padding-left: 3rem;
+}
+
+.inner {
+  margin-right: 2rem;
+}
+
+.list {
+  width: 54%;
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.fas {
+  cursor: pointer;
+  color: #008000;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.style-button-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 3rem;
+}
+
+.selectWrapper {
+  border-radius: 10%;
+  display: inline-block;
+  overflow: hidden;
+  background: #cccccc;
+  border: 2px double #008000;
+}
+
+.styled-select {
+  width: 250px;
+  height: 37px;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  background: url(assets/images/arrow.svg) no-repeat right white;
+  display: inline-block;
+  position: relative;
+  border: 0px;
+  outline: none;
+  color: #008000;
+  font-style: italic;
+}
+
+.styled-select select {
+  background: transparent;
+  -webkit-appearance: none;
+  width: 100px;
+  font-size: 11px;
+  border: 0;
+  height: 17px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.ag-row-selected {
+  background-color: palegoldenrod!important;
+}
+
+.ag-row-alert {
+  background-color: lightcoral !important;
+}
+
+.ag-header-cell {
+  background-color: #ddffd2;
+}
+
+.ag-fresh .ag-row-odd {
+  background-color: white;
+}
+
+.list .alert {
+  background-color: lightcoral !important;
+}
+
+.grid {
+  height: 160px;
+  width: 652px;
+}
+
+.user-image {
+  border-radius: 20%;
+  border-color: #008000;
+  border-style: solid;
+  width: 2rem;
+}
+
+.student-details-card-wrapper {
+  width: 93.2%;
+}
+
+/* .student-details-card:first-child {
+  width: 10%;
+} */
+
+.student-details-inner:nth-of-type(1) {
+  width: 10%;
+}
+
+.student-details-card-outer {
+  /* background-color: white; */
+  border: 2px double gray;
+  border-radius: 5% !important;
+  background-color: white !important;
+  -webkit-border-radius: 5% !important;
+  -moz-border-radius: 5% !important;
+  margin-bottom: 1rem;
+}
+
+.student-details-card {
+  display: flex;
+  border-radius: 5% !important;
+  -webkit-border-radius: 5% !important;
+  -moz-border-radius: 5% !important;
+  padding: 0.5rem !important;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.student-details-inner {
+  width: 25%;
+}
+
+.student-details-inner:nth-of-type(4) {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.student-details-value {
+  margin-bottom: 0.3rem;
+}
+
+.student-details-grade {
+  width: 25%;
+  line-height: 0.8rem;
+}
+
+textarea {
+  width: 93%!important;
+  max-height: 100px!important;
+  min-height: 100px!important;
+  height: 100px!important;
+}
+
+.ta-scroll-window>.ta-bind, .ta-scroll-window.form-control {
+  max-height: 100px!important;
+  min-height: 100px!important;
+  height: 100px!important;
+}
+
+.form-control {
+  width: 93%!important;
+}
+
+.ta-scroll-window>.ta-bind {
+  background-color: white;
+}
+
+.btn-group {
+  display: inline!important;
+}
+
+/* .ta-editor.ta-html {
+  min-height: 100px!important;
+} */
+
+.submit-wrapper {
+  display: flex;
+  margin-right: 5rem;
+  margin-top: 2rem;
+  flex-direction: row-reverse;
+}
+
+.md-button.md-primary.md-raised {
+  background-color: #008000!important;
+  color: white!important;
+}
